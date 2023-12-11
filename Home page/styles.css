@@ -1,0 +1,100 @@
+/* Reset default margin and padding for the body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Jumbotron styling */
+.jumbotron {
+    background: url('./assest/Home\ page\ bannerjpg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 90vh;
+    margin-bottom: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
+    margin-top: 0; /* Remove default top margin */
+    padding-top: 20px; /* Adjusted to maintain content visibility */
+    padding-left: 5%; /* Adjusted left padding for centering on desktop */
+    padding-right: 5%; /* Adjusted right padding for centering on desktop */
+}
+
+.container {
+    text-align: center;
+    margin: 0; /* Remove default margin */
+}
+
+.jumbotron h1,
+.jumbotron p,
+.jumbotron p.lead {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-clip: content-box;
+    margin: 0; /* Remove default margin */
+}
+
+.jumbotron h1 {
+    color: #f6ff00;
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 30px; /* Adjusted to maintain content visibility */
+    background-color: rgba(0, 255, 0, 0.5);
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+.jumbotron p {
+    color: #ff6f00;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.jumbotron p.lead {
+    color: #1cf171;
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 767px) {
+    .jumbotron h1 {
+        font-size: 2.5em;
+    }
+
+    .jumbotron p {
+        font-size: 1.5em;
+    }
+
+    .jumbotron p.lead {
+        font-size: 1.2em;
+    }
+
+    .btn-primary {
+        font-size: 1.5em;
+        padding: 10px 20px; /* Adjust button padding */
+    }
+}
+
+/* Center the Photo Gallery heading and move it more to the right */
+h2.text-center {
+    margin-top: 50px; /* Adjust the top margin as needed */
+    margin-right: 100px; /* Adjust the right margin as needed */
+}
+
+/* Style the carousel */
+#photoGalleryCarousel {
+    max-width: 780px;
+    margin: 0 auto; /* Center the carousel horizontally */
+}
+
+/* Style the carousel images */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+

@@ -1,0 +1,109 @@
+/* Background color styling */
+.bg-section {
+    background: linear-gradient(45deg, #FF0000, #FFFF00, #008000);
+    min-height: 100vh; /* Adjusted to fill at least the entire viewport */
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+}
+
+/* Additional styling for the menu section */
+.menu-section {
+    padding: 40px;
+    border-radius: 20px;
+    color:  rgba(0, 0, 0, 0.8);
+    margin-top: 0; /* Remove default top margin */
+    border-bottom: 2px solid #000000; /* Add black underline */
+}
+
+.menu-section h2,
+.menu-section ul {
+    margin-bottom: 20px;
+}
+
+.menu-section .list-group-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-section .list-group-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #c00f0f, rgba(255, 255, 255, 0));
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-section .list-group-item:hover {
+    color: #eaff00;
+}
+
+.menu-section .list-group-item:hover:before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+/* Additional styling for the starter section */
+.starter-section {
+    padding: 40px;
+    border-radius: 20px;
+    color:  rgba(0, 0, 0, 0.8);
+    margin-top: 0; /* Remove default top margin */
+    border-bottom: 2px solid #000000; /* Add black underline */
+}
+
+.starter-section h2,
+.starter-section ul {
+    margin-bottom: 20px;
+}
+
+.starter-section .list-group-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.starter-section .list-group-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #c00f0f, rgba(255, 255, 255, 0));
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.starter-section .list-group-item:hover {
+    color: #eaff00;
+}
+
+.starter-section .list-group-item:hover:before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+/* End of Background color styling */
