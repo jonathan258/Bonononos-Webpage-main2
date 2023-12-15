@@ -9,13 +9,12 @@ body {
     background: url('./assest/Home\ page\ bannerjpg.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 90vh;
-    margin-bottom: 0;
+    margin: 0; /* Remove margin */
     color: #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.8); /* Darker semi-transparent background */
-    margin-top: 0; /* Remove default top margin */
     padding-top: 20px; /* Adjusted to maintain content visibility */
     padding-left: 5%; /* Adjusted left padding for centering on desktop */
     padding-right: 5%; /* Adjusted right padding for centering on desktop */
@@ -26,108 +25,202 @@ body {
     margin: 0; /* Remove default margin */
 }
 
-.jumbotron h1,
-.jumbotron p,
-.jumbotron p.lead {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-clip: content-box;
-    margin: 0; /* Remove default margin */
-}
-
 .jumbotron h1 {
     color: #f6ff00;
-    font-size: 4em;
+    font-size: 3em; /* Adjusted font size */
     font-weight: bold;
-    padding-top: 30px; /* Adjusted to maintain content visibility */
+    padding-top: 20px; /* Adjusted to maintain content visibility */
     background-color: rgba(0, 255, 0, 0.5);
-    margin-bottom: 0; /* Remove bottom margin */
+    margin: 0; /* Remove margin */
 }
 
-.jumbotron p {
-    color: #ff6f00;
-    font-size: 2.5em;
-    font-weight: bold;
-    background-color: rgba(255, 165, 0, 0.5);
-}
-
-.jumbotron p.lead {
-    color: #1cf171;
-    font-size: 1.8em;
-    font-weight: bold;
-    background-color: rgba(255, 255, 0, 0.5);
+.btn-primary {
+    font-size: 1.5em;
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: #2ecc71 !important; /* Green background color for both mobile and desktop */
+    border-color: #2ecc71 !important; /* Green border color for both mobile and desktop */
+    color: #fff !important; /* White text color for mobile */
 }
 
 /* Adjustments for mobile responsiveness */
 @media (max-width: 767px) {
     .jumbotron h1 {
-        font-size: 2.5em;
-    }
-
-    .jumbotron p {
-        font-size: 1.5em;
-    }
-
-    .jumbotron p.lead {
-        font-size: 1.2em;
+        font-size: 2em; /* Adjusted font size */
     }
 
     .btn-primary {
         font-size: 1.5em;
         padding: 10px 20px; /* Adjust button padding */
-        background-color: #2ecc71 !important; /* Green background color for mobile */
-        border-color: #ff0 !important; /* Yellow border color for mobile */
-        color: #fff !important; /* White text color for mobile */
     }
 
     /* Center the menu button on mobile */
     .container .mt-3 {
         text-align: center;
     }
+
+    /* Adjust padding for mobile */
+    .jumbotron {
+        padding-left: 3%; /* Adjusted left padding for better responsiveness on mobile */
+        padding-right: 3%; /* Adjusted right padding for better responsiveness on mobile */
+    }
 }
 
-/* Center the Jamaican Food Delights heading and move it more to the right */
+/* Adjustments for desktop responsiveness */
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-left: 15%; /* Adjusted left padding for better alignment on desktop */
+        padding-right: 15%; /* Adjusted right padding for better alignment on desktop */
+        text-align: left; /* Align the text to the left on desktop */
+    }
+
+    .jumbotron h1 {
+        text-align: center; /* Center the heading on desktop */
+    }
+
+    .container .mt-3 {
+        text-align: left; /* Align the button to the left on desktop */
+    }
+}
+
+/* Center the Jamaican Food Delights heading for mobile */
 h2.mb-4 {
-    margin-left: 69px; /* Adjust the left margin as needed */
+    text-align: center;
+    margin: 20px auto; /* Adjust the margin and set auto for centering */
 }
 
-/* Center the images with hover effect */
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+/* Center the Jamaican Food Delights heading for desktop */
+@media (min-width: 768px) {
+    h2.mb-4 {
+        margin: 20px 50%; /* Adjust the left margin as needed for desktop */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
 }
 
-.image-container img {
+/* Style for the image section */
+.image-item {
+    text-align: center;
+    margin: 20px auto; /* Adjust the margin for both mobile and desktop */
+}
+
+.image-item img {
     max-width: 100%;
     height: auto;
     border-radius: 50%; /* for round borders */
-    margin: 40px; /* Adjust margin for more spacing */
+    margin-bottom: 10px; /* Adjust the margin as needed */
     transition: transform 0.3s ease-in-out; /* Add smooth transition effect */
 }
 
-.image-container img:hover {
-    transform: scale(1.1); /* Add a slight zoom effect on hover */
-}
-
-/* Additional Styles for Contact Us Section */
-.contact-section {
-    background-color: #f5f5dc; /* Cream background color */
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 50px;
-}
-
-.contact-heading {
-    font-size: 30px;
+.image-item p.dish-name {
     font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 1.2em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
 }
 
-.contact-info {
-    font-size: 18px;
-    margin-bottom: 10px;
+/* Style for the new party section */
+.party-section {
+    background: url(./assest/Event1.PNG) no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.party-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the opacity as needed */
+}
+
+.party-section h2,
+.party-section p {
+    font-size: 2.5em; /* Adjusted font size */
+    font-weight: bold;
+    text-align: center; /* Center text */
+}
+
+.party-section p.party-description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 767px) {
+    .party-section h2 {
+        font-size: 2em;
+    }
+
+    .party-section p.party-description {
+        font-size: 1em;
+    }
+}
+
+/* Adjustments for desktop responsiveness */
+@media (min-width: 768px) {
+    .party-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center contents horizontally on desktop */
+        justify-content: center; /* Center contents vertically on desktop */
+        height: 100vh; /* Ensure the section takes up the full viewport height on desktop */
+    }
+
+    .party-section h2,
+    .party-section p {
+        text-align: center; /* Center the heading and paragraph on desktop */
+        max-width: 600px; /* Limit the width of text for better readability on desktop */
+        margin: 0 auto; /* Center the text horizontally within the section on desktop */
+    }
+}
+
+
+/* Style for the last section */
+.last-section {
+    background-color: #f5e7d2; /* Beige-like background color */
+}
+
+.last-section h2,
+.last-section p.last-section-description {
+    font-size: 2.5em; /* Adjusted font size */
+    font-weight: bold;
+    text-align: center; /* Center text */
+}
+
+.last-section p.last-section-description {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Adjustments for desktop responsiveness */
+@media (min-width: 768px) {
+    .last-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center contents horizontally on desktop */
+        justify-content: center; /* Center contents vertically on desktop */
+        padding-left: 15%; /* Adjusted left padding for better alignment on desktop */
+        padding-right: 15%; /* Adjusted right padding for better alignment on desktop */
+        text-align: left; /* Align text to the left on desktop */
+        height: 100vh; /* Ensure the section takes up the full viewport height on desktop */
+    }
+
+    .last-section h2,
+    .last-section p.last-section-description {
+        text-align: center; /* Center the heading and paragraph on desktop */
+        max-width: 600px; /* Limit the width of text for better readability on desktop */
+        margin: 0 auto; /* Center the text horizontally within the section on desktop */
+    }
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #000; /* Black background color */
+    text-align: center; /* Center text in the footer */
+}
+
+.footer p {
+    margin: 0;
 }
