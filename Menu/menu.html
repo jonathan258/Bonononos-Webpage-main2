@@ -10,6 +10,118 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href="menuStyle.css" />
+
+    <Style>
+        /* Background color styling */
+.bg-section {
+    background: linear-gradient(45deg, #FF0000, #FFFF00, #008000);
+    min-height: 100vh; /* Adjusted to fill at least the entire viewport */
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line on smaller screens */
+}
+
+/* Additional styling for the menu section */
+.menu-section {
+    padding: 40px;
+    border-radius: 20px;
+    color:  rgba(0, 0, 0, 0.8);
+    margin-top: 0; /* Remove default top margin */
+    border-bottom: 2px solid #000000; /* Add black underline */
+}
+
+.menu-section h2,
+.menu-section ul {
+    margin-bottom: 20px;
+}
+
+.menu-section .list-group-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-section .list-group-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #c00f0f, rgba(255, 255, 255, 0));
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-section .list-group-item:hover {
+    color: #eaff00;
+}
+
+.menu-section .list-group-item:hover:before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+/* Additional styling for the starter section */
+.starter-section {
+    padding: 40px;
+    border-radius: 20px;
+    color:  rgba(0, 0, 0, 0.8);
+    margin-top: 0; /* Remove default top margin */
+    border-bottom: 2px solid #000000; /* Add black underline */
+}
+
+.starter-section h2,
+.starter-section ul {
+    margin-bottom: 20px;
+}
+
+.starter-section .list-group-item {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.starter-section .list-group-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #c00f0f, rgba(255, 255, 255, 0));
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease-in-out;
+}
+
+.starter-section .list-group-item:hover {
+    color: #eaff00;
+}
+
+.starter-section .list-group-item:hover:before {
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+/* End of Background color styling */
+    </Style>
 </head>
 <body>
    <!-- Background color section directly under the jumbotron -->
@@ -79,20 +191,152 @@
             <div class="starter-section">
                 <h2>Starters</h2>
                 <ul class="list-group mb-4">
+                    <!-- Existing starter -->
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Jamaican Patty
-                        <span class="badge badge-primary badge-pill">$5.99</span>
+                        Cheese beef patty
+                        <span class="badge badge-primary badge-pill">$5.50</span>
                     </li>
-                    <!-- Add more starters as needed -->
+                
+                    <!-- New starters -->
                     <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Callaloo Soup
-                        <span class="badge badge-primary badge-pill">$7.99</span>
+                        Beef Patty
+                        <span class="badge badge-primary badge-pill">$4.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Spicy Chicken Wings
+                        <span class="badge badge-primary badge-pill">$6.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Vegetarian Spring Rolls
+                        <span class="badge badge-primary badge-pill">$3.50</span>
+                    </li>
+                
+                    <!-- Additional starters -->
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Patty Combo Meal
+                        <span class="badge badge-primary badge-pill">$10.95</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Fried Plantain
+                        <span class="badge badge-primary badge-pill">$4.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Veggie Patty
+                        <span class="badge badge-primary badge-pill">$5.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Festival (5 per serving)
+                        <span class="badge badge-primary badge-pill">$10.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Red Peas Soup (Small)
+                        <span class="badge badge-primary badge-pill">$4.50</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Red Peas Soup (Large)
+                        <span class="badge badge-primary badge-pill">$7.54</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Extra Rice and Peas
+                        <span class="badge badge-primary badge-pill">$6.00</span>
+                    </li>
+                
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Extra Gravy
+                        <span class="badge badge-primary badge-pill">$2.00</span>
                     </li>
                 </ul>
+                
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="starter-section">
+                <h2>Drinks(We also serve alcohol and package beer) </h2>
+                <ul class="list-group mb-4">
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Carrot Juice
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Island Soda
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    CoCa-Cola
+    <span class="badge badge-primary badge-pill">$2.25</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Pepsi
+    <span class="badge badge-primary badge-pill">$2.25</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Diet Pepsi
+    <span class="badge badge-primary badge-pill">$2.25</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Bottle Water
+    <span class="badge badge-primary badge-pill">$2.25</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Cush Pop
+    <span class="badge badge-primary badge-pill">$2.25</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Mango Juice
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Cucumber Cooler
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+  </ul>      
+  </div>
+ </div>
+
+        <div class="col-md-6">
+            <div class="starter-section">
+                <h2>Deserts</h2>
+                <ul class="list-group mb-4">
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Caribbean Coconut Cake
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Banana Bread
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Bread Pudding
+    <span class="badge badge-primary badge-pill">$4.50</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Sweet Potato Pudding
+    <span class="badge badge-primary badge-pill">$9.00</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    Carrot Cake
+    <span class="badge badge-primary badge-pill">$8.00</span>
+</li>
+  </ul>
+                
             </div>
         </div>
     </div>
 </div>
+
+
+
+
+
 <!-- End of  Background color section directly under the jumbotron -->
 
 
